@@ -2,4 +2,4 @@
 
 ## Author
 
-Jai P Lakwale
+JaiPrakash Lakwale
