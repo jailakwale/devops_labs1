@@ -1,0 +1,17 @@
+version: '3'
+services:
+  redis:
+    image: redis
+    volumes:
+      - my-vol:/data  
+  web:
+    depends_on:
+      - redis
+    image: docker-compose
+    ports:
+      - "4000:8080"
+    environment:
+      REDIS_HOST: redis
+# Add persistent volume
+volumes:
+  my-vol:
